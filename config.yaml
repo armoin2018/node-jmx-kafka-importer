@@ -1,0 +1,23 @@
+kafka:
+  host: 'my-kafka-broker.example.com:9093'
+  ssl:
+    rejectUnauthorized: true
+    clientKeyPath: '/path/to/client.key'
+    clientCertPath: '/path/to/client.cert'
+    caCertPath: '/path/to/ca.cert'
+
+ports:
+  - port: 7199
+    topic: 'jmx7199'
+    ssl:
+      rejectUnauthorized: true
+      clientKeyPath: '/path/to/client.key'
+      clientCertPath: '/path/to/client.cert'
+      caCertPath: '/path/to/ca.cert'
+  - port: 7200
+    topic: 'jmx7200'
+    ssl:
+      rejectUnauthorized: true
+      clientKeyPath: '/path/to/client.key'
+      clientCertPath: '/path/to/client.cert'
+      caCertPath: '/path/to/ca.cert'
